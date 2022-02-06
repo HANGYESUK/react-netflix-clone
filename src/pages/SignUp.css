@@ -1,0 +1,89 @@
+.logIn {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.0),
+        rgba(0,0,0,0.8)
+    ), url("https://assets.nflxext.com/ffe/siteui/vlv3/8f3e38a9-1c2c-4818-99b5-2d9bdff9ad1d/dd8cc819-8e2f-40ef-ab98-b10500bd9703/KR-ko-20220124-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    background-size: cover;
+}
+
+.login-Logo {
+    position: fixed;
+    left: 0;
+    width: 150px;
+    padding-left: 20px;
+    cursor: pointer;
+    top: 20px;
+}
+
+.signup-Down {
+    width: 100%;
+    height: 90px;
+}
+
+.signUp {
+    max-width: 300px;
+    padding: 70px;
+    background-color: rgba(0,0,0,0.85);
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border-radius: 20px;
+    
+}
+
+.signUp> form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signUp > form > input {
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+}
+
+.signUp > form > button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.signup-Gray {
+    color: grey;
+}
+
+.signup-Link {
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.signup-Link:hover {
+    text-decoration: none;
+}
+
+
+@media (max-width: 740px) {
+    .signup-Down {
+        display: none;
+    }
+
+    .signUp {
+        max-width: 100%;
+        height: 100%;
+    }
+}

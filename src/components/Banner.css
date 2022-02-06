@@ -1,0 +1,53 @@
+.banner {
+    position: relative;
+    height: 448px;
+    color: rgb(255, 255, 255);
+}
+
+.banner-Content {
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+}
+
+.banner-Title {
+    font-size: 54px;
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+
+.banner-desc {
+    width: 360px;
+    padding-top: 15px;
+    font-size: 14px;
+    max-width: 360px;
+    height: 80px;
+}
+
+.banner-Button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: red;
+    margin-right: 15px;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.banner-Button:hover {
+    color: red;
+    background-color: white;
+
+}
+
+.banner-FadeBottom {
+    height: 120px;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgb(45,49,53,0.6)
+        #111
+    );
+}

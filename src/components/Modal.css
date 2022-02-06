@@ -1,0 +1,107 @@
+a {
+    text-decoration: none;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-Container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    width: 500px;
+    max-width: 800px;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.modal-Img {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-Box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgb(19, 19, 19),
+        rgb(15, 15, 15),
+        rgb(19, 19, 19),
+        rgb(15, 15, 15),
+        rgb(15, 15, 15),
+        rgb(19, 19, 19),
+        rgb(15, 15, 15),
+        #111
+    );
+}
+
+.modal-Btn-Box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-Btn {
+    width: 250px;
+    max-width: 400px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.modal-Btn:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 200px;
+    top: 10px;
+    text-align: center;
+    z-index: 3;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.overview {
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+
