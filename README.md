@@ -1,6 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=wave&color=&height=300&section=header&text=넷플릭스%20클론&fontSize=90)
-
-![header](https://capsule-render.vercel.app/api?type=wave&color=gradient&height=160&section=header&text=넷플릭스%20클론&fontAlign=50&fontAlignY=70&fontSize=90&fontColor=000000)
+![header](https://capsule-render.vercel.app/api?type=wave&color=gradient&height=200&section=header&text=넷플릭스%20클론&fontAlign=50&fontAlignY=70&fontSize=90&fontColor=000000)
 
 
 # 사이트방문 https://hangyesuk.github.io/
