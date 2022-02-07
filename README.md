@@ -12,6 +12,11 @@
   <img src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=white"/></a>&nbsp 
 <br><br>
 
+<hr>
+<br>
+# 리액트를 이용해 제작한 넷플릭스 클론 사이트 입니다.
+# TMDB의 API를 사용해 인기 영화 데이터를 가져와 제작 했습니다
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
