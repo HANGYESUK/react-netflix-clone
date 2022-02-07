@@ -11,8 +11,6 @@
   <img src="https://img.shields.io/badge/Javascript-ffb13b?style=flat-square&logo=javascript&logoColor=white"/></a>&nbsp 
   <img src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=white"/></a>&nbsp 
 <br><br>
-
-<hr>
 <br>
 
 # 리액트를 이용해 제작한 넷플릭스 클론 사이트 입니다.
