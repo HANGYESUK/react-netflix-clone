@@ -2,6 +2,9 @@
 
 
 # 사이트방문 https://hangyesuk.github.io/
+<br>
+# 리액트를 이용해 제작한 넷플릭스 클론 사이트 입니다.
+# TMDB의 API를 사용해 인기 영화 데이터를 가져와 제작 했습니다
 
 <br><br>
 <h2 align="center">✔ Tech Stack ✔</h2>
@@ -13,8 +16,6 @@
 <br><br>
 <br>
 
-# 리액트를 이용해 제작한 넷플릭스 클론 사이트 입니다.
-# TMDB의 API를 사용해 인기 영화 데이터를 가져와 제작 했습니다
 
 # Getting Started with Create React App
 
