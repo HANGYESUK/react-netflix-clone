@@ -19,12 +19,15 @@ function Row({title, fetchUrl, isLarge=false, show, movieInfo2}) {
     fetchData()
   }, [])
 
+  console.log(movies)
+
 
   return (
 
     <div className='row'>
       <h2>{title}</h2>
       <div className='row-Posters'>
+
         {
           movies.map(item => (
             <img
@@ -40,9 +43,8 @@ function Row({title, fetchUrl, isLarge=false, show, movieInfo2}) {
             }}/>
           ))
         }
-
     
-          </div>
+      </div>
       </div>
 
   )

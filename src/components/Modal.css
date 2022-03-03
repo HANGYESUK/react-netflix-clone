@@ -9,6 +9,7 @@ a {
 }
 
 .modal-Container {
+    min-width: 500px;
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -76,8 +77,8 @@ a {
     position: relative;
     width: 50px;
     height: 50px;
-    left: 300px;
-    top: 30px;
+    left: 30%;
+    top: 5%;
     text-align: center;
     z-index: 3;
     border: none;

@@ -1,0 +1,72 @@
+.d-flex {
+    display: flex;
+  }
+  @media (max-width: 767.98px) {
+    .d-flex {
+      display: block;
+    }
+  }
+  .item {
+    padding: 2rem;
+  }
+  .item-img {
+    position: relative;
+    width: 100%;
+  }
+  .loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+  }
+  /* 이미지의 스켈레톤(뼈대) */
+  .loading-img {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+  }
+  /**
+   * 깜박이는 블링크 애니메이션
+   */
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  .blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  /* 실제 이미지 */
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .item-text {
+    position: relative;
+    width: 320px;
+  }
+  /* 텍스트의 스켈레톤 */
+  .loading-text {
+    margin-bottom: .7rem;
+    height: 20px;
+    background-color: #e0e0e0;
+  }
+  /**
+   * 실제 텍스트
+   */
+  h3 {
+    margin-bottom: .5rem;
+  }
+  .create-date {
+    font-size: smaller;
+    margin-bottom: .5rem;
+  }
+  .intro {
+    font-style: italic;
+    word-break: break-all;
+  }
+  /* 스켈레톤 스크린 숨기기 */
+  .loading-hidden {
+    display: none;
+  }
