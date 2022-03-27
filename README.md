@@ -1,7 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=slice&color=gradient&height=200&section=header&text=넷플릭스%20클론&fontAlign=50&fontAlignY=70&fontSize=90&fontColor=000000)
 
 
-# 사이트방문 https://hangyesuk.github.io/
+# 사이트방문 https://HANGYESUK.github.io/
 # 개인프로젝트 - API사용
 # 소개
 - TMDB의 API를 사용해 인기 영화 데이터를 가져와 제작하였습니다.
