@@ -23,7 +23,7 @@ function Modal({show, movieInfo}) {
             <div className='modal-Img'/>
             <div className='modal-Box'>
                 <div className='modal-Btn-Box'>
-                    <div className='title'><h3>{movieInfo.original_title}</h3></div>
+                    <div className='title'><h3>{movieInfo.title}</h3></div>
                     <div className='modal-Btn'>찜하기</div>
                     <a href={`https://www.youtube.com/results?search_query=${movieInfo.original_title}`}><div className='modal-Btn'>예고편</div></a>
                     

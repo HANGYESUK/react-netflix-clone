@@ -4,7 +4,7 @@ import SignUp from './pages/SignUp.js';
 import { Routes, Route } from  'react-router-dom';
 import Modal from './components/Modal';
 import React, { useState } from 'react';
-import Like from './pages/Like';
+import Search from './pages/Search';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Routes>
             <Route path="/signUp" element={<SignUp/>}/>
             <Route path="/" element={<Home/>}/>
-            <Route path="/like" element={<Like/>}/>
+            <Route path="/search" element={<Search/>}/>
         </Routes>
     </div>
   );

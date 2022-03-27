@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-let movie = 0;
+let Likemovie = 0;
 
-let store = createStore(()=>{ return movie })
+let store = createStore(()=>{ return Likemovie })
 
 ReactDOM.render(
   <BrowserRouter>

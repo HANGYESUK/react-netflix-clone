@@ -17,6 +17,7 @@ function Row({title, fetchUrl, isLarge=false, show, movieInfo2}) {
     }
 
     fetchData()
+    
   }, [])
 
   console.log(movies)
