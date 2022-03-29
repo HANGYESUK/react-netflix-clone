@@ -1,4 +1,4 @@
-const API_KEY = "1234"; //API키는 숫자로 대체합니다. 
+const API_KEY = "9624691c8f3b98996891e9ba6bfb2d06"; //API키는 숫자로 대체합니다. 
 
 const urls = {
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=ko`,
