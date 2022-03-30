@@ -28,9 +28,10 @@ function MovieData() {
             async function fetchData() {
                 let res = await axios.get(item.fetch)
                 console.log(res.data.results)
+                let Copy = movie
                 let resCopy = res.data.results
 
-                movies.push(...resCopy)
+                setMovie([...Copy, ...resCopy])
             }
 
             fetchData()
