@@ -19,27 +19,32 @@ function MovieData() {
 
     let [movie, setMovie] = useState([]);
 
+
+
+
     useEffect(()=>{
 
-        let movies = [];
+      let movies = [];
 
-
-        urls.map((item, i)=>{
-            async function fetchData() {
-                let res = await axios.get(item.fetch)
-                console.log(res.data.results)
-                let resCopy = res.data.results
-
-                movies.push(...resCopy)
-            }
-
-            fetchData()
-
+      function getUrl() {
+        urls.map((item)=>{
+          async function fetchData() {
+            let res = await axios.get(item.fetch)
             console.log(movies)
+            console.log(res.data.results)
+            let resCopy = res.data.results
 
-            setMovie([...movies])
+            movies = [...movies, ...resCopy]
+          }
+          
+          fetchData()
 
         })
+      }
+
+      getUrl()
+
+      setMovie([...movies])
 
     }, [])
 
