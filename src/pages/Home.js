@@ -32,6 +32,7 @@ function Home() {
               <Row title="로맨스" fetchUrl={urls.fetchRomanceMovies} show={show} movieInfo2={movieInfo2}/>
               <Row title="별개의 콘텐츠" fetchUrl={urls.fetchDocumentaries} show={show} movieInfo2={movieInfo2}/>
             </div>
+            
         }
 
     </>
