@@ -30,15 +30,30 @@
     margin-bottom: 100px;
 }
 
+.poster-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 420px;
+}
+
 .like-Container {
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     max-width: 1000px;
 }
 
 .like-Content {
-    background: blue;
-    width: 250px;
+    width: 200px;
     height: 300px;
     margin: 10px;
 }
+
+.like-Content img {
+    width: 200px;
+    height: 300px;
+}
+
+

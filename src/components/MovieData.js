@@ -1,7 +1,7 @@
 import axios from '../axios';
 import React, { useState, useEffect } from 'react'
 
-function MovieData() {
+function MovieData(props) {
 
     const API_KEY = "9624691c8f3b98996891e9ba6bfb2d06";
 
@@ -53,7 +53,15 @@ function MovieData() {
 
 
   return (
-    <div>MovieData</div>
+    <div className='like-Container'>
+      {
+        movie.map((item, index) => (
+            <img
+            src={`${props.image_base_url}${item.poster_path}`}
+            className='like-Content'/>
+        ))
+      }
+    </div>
   )
 
 }
