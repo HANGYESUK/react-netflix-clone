@@ -35,6 +35,8 @@ function MovieData() {
             let resCopy = res.data.results
 
             movies = [...movies, ...resCopy]
+
+            setMovie([...movies])
           }
           
           fetchData()
@@ -43,8 +45,6 @@ function MovieData() {
       }
 
       getUrl()
-
-      setMovie([...movies])
 
     }, [])
 
