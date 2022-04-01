@@ -5,6 +5,8 @@ function MovieData(props) {
 
     const API_KEY = "9624691c8f3b98996891e9ba6bfb2d06";
 
+    const image_base_url = 'https://image.tmdb.org/t/p/original';
+
     const urls = [
         { fetch: `/trending/all/week?api_key=${API_KEY}&language=ko` },
         { fetch: `/discover/tv?api_key=${API_KEY}&language=ko&with_networks=213` },
@@ -18,6 +20,8 @@ function MovieData(props) {
     
 
     let [movie, setMovie] = useState([]);
+
+    let [movieCopy, setMovieCopy] = useState([]);
 
 
 
@@ -37,6 +41,7 @@ function MovieData(props) {
             movies = [...movies, ...resCopy]
 
             setMovie([...movies])
+            setMovieCopy([...movies])
           }
           
           fetchData()
@@ -49,19 +54,82 @@ function MovieData(props) {
     }, [])
 
     console.log(movie)
+    console.log(movieCopy)
+
+
+    const filter = (e)=>{
+      console.log(e.target.value)
+      let data = e.target.value
+      let copy = [...movieCopy]
+      let result = []
+
+      copy.map((item, index)=>{
+
+        if(item.title != null) {
+          // console.log("title있음 : ", item.title)
+          if(item.title.includes(data)) {
+            console.log(item.title)
+            result.push(item)
+          }
+          else {
+            console.log("title 없음")
+          }
+        }
+        else if(item.name != null) {
+          // console.log("name있음 : ", item.name)
+          if(item.name.includes(data)) {
+            console.log(item.name)
+            result.push(item)
+          }
+          else {
+            console.log("name 없음")
+          }
+        }
+        else {
+          // console.log("둘 다 없음 : ", item.original_title)
+          if(item.original_title.includes(data)) {
+            console.log(item.original_title)
+            result.push(item)
+          }
+          else {
+            console.log("original_title 없음")
+          }
+        }
+
+        // if(item.name.includes(data)) {
+        //   console.log(item.name)
+        // }
+        // else {
+        //   console.log("없음")
+        // }
+        // item.original_title.filter((data)=>{
+        //   return data == e.target.value
+        // })
+        // console.log(result)
+      })
+
+      setMovie([...result])
+
+    }
 
 
 
   return (
-    <div className='like-Container'>
-      {
-        movie.map((item, index) => (
-            <img
-            src={`${props.image_base_url}${item.poster_path}`}
-            className='like-Content'/>
-        ))
-      }
-    </div>
+    <>
+      <div className='search-Box colum'>
+          <input className='search-Bar' onChange={filter}></input>
+      </div>
+      <div className='like-Container'>
+        {
+          movie.map((item, index) => (
+              <img
+              src={`${image_base_url}${item.poster_path}`}
+              className='like-Content'
+              />
+          ))
+        }
+      </div>
+    </>
   )
 
 }

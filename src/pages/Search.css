@@ -36,9 +36,11 @@
     justify-content: center;
     align-items: center;
     min-width: 420px;
+    height: 100%;
 }
 
 .like-Container {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

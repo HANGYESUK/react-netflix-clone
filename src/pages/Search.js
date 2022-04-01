@@ -33,9 +33,6 @@ function Search(props) {
       <>
         <Nav/>
         <div className='search-Container colum'>
-            <div className='search-Box colum'>
-                <input className='search-Bar'></input>
-            </div>
             <div className='poster-Container'>
                 <MovieData image_base_url={image_base_url}/>
             </div>
