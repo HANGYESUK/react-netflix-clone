@@ -117,16 +117,21 @@ function MovieData(props) {
   return (
     <>
       <div className='search-Box colum'>
-          <input className='search-Bar' onChange={filter}></input>
+          <input className='search-Bar'
+           onChange={filter} 
+           placeholder="찾으시는 영화를 알려주세요"
+           ></input>
       </div>
       <div className='like-Container'>
         {
-          movie.map((item, index) => (
-              <img
-              src={`${image_base_url}${item.poster_path}`}
-              className='like-Content'
-              />
-          ))
+          movie.length != 0
+          ? movie.map((item, index) => (
+                <img
+                src={`${image_base_url}${item.poster_path}`}
+                className='like-Content'
+                />
+            ))
+          : <div className='movieNull'><h1>영화가 없습니다ㅠ</h1></div>
         }
       </div>
     </>

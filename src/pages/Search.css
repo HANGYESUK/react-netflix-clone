@@ -58,4 +58,9 @@
     height: 300px;
 }
 
+.movieNull {
+    min-height: 100vw;
+    color: white;
+}
+
 

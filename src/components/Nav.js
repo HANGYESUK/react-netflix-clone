@@ -37,6 +37,9 @@ function Nav() {
                   src='https://mir-s3-cdn-cf.behance.net/project_modules/disp/e70b1333850498.56ba69ac32ae3.png'
                   alt=''/>
             </a>
+            <a href='/search'>
+              <h2 className='nav-search'>검색🔍</h2>
+            </a>
         </div>
     </div>
     )

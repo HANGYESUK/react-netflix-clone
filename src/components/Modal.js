@@ -1,7 +1,7 @@
 import React from 'react';
 import './Modal.css';
 
-function Modal({show, movieInfo}) {
+const modal = React.memo(function Modal({show, movieInfo}) {
 
 
     const image_base_url = 'https://image.tmdb.org/t/p/original';
@@ -36,6 +36,6 @@ function Modal({show, movieInfo}) {
         </div>
       </div>
   )
-}
+})
 
-export default Modal;
+export default modal;
