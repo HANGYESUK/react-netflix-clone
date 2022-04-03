@@ -45,6 +45,15 @@
     border-radius: 10%;
 }
 
+.nav-like {
+    position: fixed;
+    top: 0px;
+    right: 250px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
 .nav-Black {
     background-color: black;
 }

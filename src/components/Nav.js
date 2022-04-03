@@ -40,6 +40,9 @@ function Nav() {
             <a href='/search'>
               <h2 className='nav-search'>검색🔍</h2>
             </a>
+            <a href='/like'>
+              <h2 className='nav-like'>찜 목록</h2>
+            </a>
         </div>
     </div>
     )

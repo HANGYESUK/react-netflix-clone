@@ -5,6 +5,7 @@ import { Routes, Route } from  'react-router-dom';
 import Modal from './components/Modal';
 import React, { useState } from 'react';
 import Search from './pages/Search';
+import Like from './pages/Like';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Route path="/signUp" element={<SignUp/>}/>
             <Route path="/" element={<Home/>}/>
             <Route path="/search" element={<Search/>}/>
+            <Route path="/like" element={<Like/>}/>
         </Routes>
     </div>
   );

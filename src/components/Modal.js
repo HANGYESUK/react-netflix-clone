@@ -1,7 +1,19 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import './Modal.css';
 
 const modal = React.memo(function Modal({show, movieInfo}) {
+
+    console.log(movieInfo)
+
+    const dispatch = useDispatch()
+
+    let history = useNavigate();
+
+    function likeMovie() {
+        history('/like')
+    }
 
 
     const image_base_url = 'https://image.tmdb.org/t/p/original';
@@ -30,7 +42,10 @@ const modal = React.memo(function Modal({show, movieInfo}) {
                             : <h3>{movieInfo.name}</h3>
                         }
                     </div>
-                    <div className='modal-Btn'>찜하기</div>
+                    <div className='modal-Btn' onClick={()=>{
+                        dispatch({type: "likeMovie", payload: movieInfo})
+                        likeMovie()
+                    }}>찜하기</div>
                     <a href={`https://www.youtube.com/results?search_query=${movieInfo.original_title}`}><div className='modal-Btn'>예고편</div></a>
                     
                 </div>

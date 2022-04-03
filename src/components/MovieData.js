@@ -122,13 +122,13 @@ function MovieData(props) {
            placeholder="찾으시는 영화를 알려주세요"
            ></input>
       </div>
-      <div className='like-Container'>
+      <div className='search-Container'>
         {
           movie.length != 0
           ? movie.map((item, index) => (
                 <img
                 src={`${image_base_url}${item.poster_path}`}
-                className='like-Content'
+                className='search-Content'
                 />
             ))
           : <div className='movieNull'><h1>영화가 없습니다ㅠ</h1></div>

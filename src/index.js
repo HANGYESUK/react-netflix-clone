@@ -6,9 +6,21 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-let Likemovie = 0;
+let Likemovie = [];
 
-let store = createStore(()=>{ return Likemovie })
+function likeReducer(state=Likemovie, action) {
+  if(action.type === "likeMovie") {
+    console.log(action.payload)
+    let copy=state
+    copy.push(action.payload)
+    return copy
+  }
+  else {
+    return state
+  }
+}
+
+let store = createStore(likeReducer)
 
 ReactDOM.render(
   <BrowserRouter>
