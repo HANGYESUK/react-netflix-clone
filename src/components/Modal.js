@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import './Modal.css';
 
@@ -44,6 +44,7 @@ const modal = React.memo(function Modal({show, movieInfo}) {
                     </div>
                     <div className='modal-Btn' onClick={()=>{
                         dispatch({type: "likeMovie", payload: movieInfo})
+                        show()
                         likeMovie()
                     }}>찜하기</div>
                     <a href={`https://www.youtube.com/results?search_query=${movieInfo.original_title}`}><div className='modal-Btn'>예고편</div></a>

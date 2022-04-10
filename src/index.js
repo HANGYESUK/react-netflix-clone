@@ -10,10 +10,17 @@ let Likemovie = [];
 
 function likeReducer(state=Likemovie, action) {
   if(action.type === "likeMovie") {
-    console.log(action.payload)
-    let copy=state
-    copy.push(action.payload)
-    return copy
+    if(state.filter(item => item.original_title == action.payload.original_title) != 0) {
+     
+      return Likemovie
+    }
+    else {
+      console.log(action.payload)
+      let copy=state
+      copy.push(action.payload)
+      return copy
+    }
+
   }
   else {
     return state

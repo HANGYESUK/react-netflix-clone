@@ -3,7 +3,7 @@ import './Like.css';
 import { useSelector } from 'react-redux';
 import Nav from '../components/Nav';
 
-function Like(props) {
+function Like({ show, movieInfo2 }) {
 
     const state = useSelector((state)=>{ return state })
 
@@ -23,6 +23,14 @@ function Like(props) {
                   <img
                   src={`${image_base_url}${item.poster_path}`}
                   className='like-Content'
+                  onClick={(e)=>{
+                    for(let i = 0; i<state.length; i++) {
+                      if(e.currentTarget.src == `${image_base_url}${state[i].poster_path}`) {
+                        movieInfo2(state[i])
+                      }
+                    }
+                    show()
+                  }}
                   />
                   {
                     item.title != null

@@ -5,46 +5,11 @@ import Row from '../components/Row';
 import urls from "../Movieurl";
 import Modal from '../components/Modal';
 
-function Home() {
-
-  let [showModal, showModal2] = useState(false);
-
-  let [movieInfo, movieInfo2] = useState([]);
-
-  const show = ()=>{
-    showModal2(!showModal)
-  }
-
-  function showCheck(e) {
-    if(document.getElementById('home-Container') == null) {
-      return null
-    }
-    else {
-      let home = document.getElementById('home-Container');
-      if(showModal == true) {
-        home.style.visibility = "hidden";
-      }
-      else {
-        home.style.visibility = "visible";
-      }
-    }
-  }
-
-
-
-  showCheck()
-
+function Home({show, movieInfo2}) {
 
   return (
     <>
       <Nav/>
-        {
-
-          showModal == true 
-          ? <Modal show={show} movieInfo={movieInfo}/>
-          : null
-          
-        }
         <div id='home-Container'>
           <Banner/>
           <Row title="지금 뜨는 콘텐츠 " fetchUrl={urls.fetchTrending} isLarge show={show} movieInfo2={movieInfo2}/>
